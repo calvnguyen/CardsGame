@@ -14,6 +14,7 @@
 		B15187AF1E26C1FC00DD0906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15187AD1E26C1FC00DD0906 /* LaunchScreen.storyboard */; };
 		B15187BA1E26C1FC00DD0906 /* CardsGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15187B91E26C1FC00DD0906 /* CardsGameTests.swift */; };
 		B15187C51E26C1FC00DD0906 /* CardsGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15187C41E26C1FC00DD0906 /* CardsGameUITests.swift */; };
+		B1F90A7D1E26D3D5001C6A63 /* deck_of_cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F90A7C1E26D3D5001C6A63 /* deck_of_cards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B15187C01E26C1FC00DD0906 /* CardsGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15187C41E26C1FC00DD0906 /* CardsGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGameUITests.swift; sourceTree = "<group>"; };
 		B15187C61E26C1FC00DD0906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F90A7C1E26D3D5001C6A63 /* deck_of_cards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = deck_of_cards.swift; path = ../../../DeckOfCards/deck_of_cards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				B15187A41E26C1FB00DD0906 /* AppDelegate.swift */,
 				B15187A61E26C1FB00DD0906 /* ViewController.swift */,
+				B1F90A7C1E26D3D5001C6A63 /* deck_of_cards.swift */,
 				B15187A81E26C1FC00DD0906 /* Main.storyboard */,
 				B15187AB1E26C1FC00DD0906 /* Assets.xcassets */,
 				B15187AD1E26C1FC00DD0906 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				B15187A71E26C1FB00DD0906 /* ViewController.swift in Sources */,
 				B15187A51E26C1FB00DD0906 /* AppDelegate.swift in Sources */,
+				B1F90A7D1E26D3D5001C6A63 /* deck_of_cards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +509,7 @@
 				B15187CB1E26C1FC00DD0906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B15187CC1E26C1FC00DD0906 /* Build configuration list for PBXNativeTarget "CardsGameTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				B15187CE1E26C1FC00DD0906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B15187CF1E26C1FC00DD0906 /* Build configuration list for PBXNativeTarget "CardsGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				B15187D11E26C1FC00DD0906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

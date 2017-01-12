@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardsGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,105 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Welcome to my Cards Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWh-9v-d0w">
+                                <rect key="frame" x="55" y="28" width="265" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uZ7-7h-aUr">
+                                <rect key="frame" x="16" y="113.5" width="343" height="403.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VYm-HV-ldT">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="202"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c2" translatesAutoresizingMaskIntoConstraints="NO" id="yez-99-ohk">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="202"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h2" translatesAutoresizingMaskIntoConstraints="NO" id="Cih-LX-NTv">
+                                                <rect key="frame" x="114.5" y="0.0" width="114" height="202"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s10" translatesAutoresizingMaskIntoConstraints="NO" id="YOu-JV-XWj">
+                                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="202"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yJ2-wG-Hob">
+                                        <rect key="frame" x="0.0" y="202" width="343" height="201.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h3" translatesAutoresizingMaskIntoConstraints="NO" id="HSj-5y-Y7A">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="201.5"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h9" translatesAutoresizingMaskIntoConstraints="NO" id="067-o9-RbA">
+                                                <rect key="frame" x="114.5" y="0.0" width="114" height="201.5"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d5" translatesAutoresizingMaskIntoConstraints="NO" id="XrQ-Dh-DbA">
+                                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="201.5"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUv-Fn-rJu">
+                                <rect key="frame" x="262" y="617" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ed0-SH-VgI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="255" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8P-MV-hDG">
+                                <rect key="frame" x="76" y="617" width="36" height="30"/>
+                                <state key="normal" title="Draw"/>
+                                <connections>
+                                    <action selector="drawButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DD9-BS-NV4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm7-ME-yWI">
+                                <rect key="frame" x="161" y="617" width="53" height="30"/>
+                                <state key="normal" title="Discard"/>
+                                <connections>
+                                    <action selector="discardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mtW-aD-Mlh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cm7-ME-yWI" firstAttribute="leading" secondItem="X8P-MV-hDG" secondAttribute="trailing" constant="49" id="0nc-mZ-BgU"/>
+                            <constraint firstItem="uZ7-7h-aUr" firstAttribute="top" secondItem="qWh-9v-d0w" secondAttribute="bottom" constant="64.5" id="73H-XF-tHo"/>
+                            <constraint firstItem="ZUv-Fn-rJu" firstAttribute="leading" secondItem="Cm7-ME-yWI" secondAttribute="trailing" constant="48" id="AEb-zG-zQF"/>
+                            <constraint firstItem="qWh-9v-d0w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gkm-E7-dwQ"/>
+                            <constraint firstItem="qWh-9v-d0w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="HrP-mH-Rvg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uZ7-7h-aUr" secondAttribute="trailing" id="Jr8-E4-Mjg"/>
+                            <constraint firstItem="X8P-MV-hDG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="bDr-61-Keg"/>
+                            <constraint firstItem="X8P-MV-hDG" firstAttribute="top" secondItem="uZ7-7h-aUr" secondAttribute="bottom" constant="100" id="cH3-Nf-cDG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZUv-Fn-rJu" secondAttribute="trailing" constant="58" id="e3A-j2-nGG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="uZ7-7h-aUr" secondAttribute="leading" id="eip-bR-cnX"/>
+                            <constraint firstItem="ZUv-Fn-rJu" firstAttribute="leading" secondItem="X8P-MV-hDG" secondAttribute="trailing" constant="150" id="ign-NO-JOb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X8P-MV-hDG" secondAttribute="bottom" constant="20" id="nw1-7J-eaA"/>
+                            <constraint firstItem="ZUv-Fn-rJu" firstAttribute="top" secondItem="uZ7-7h-aUr" secondAttribute="bottom" constant="100" id="woa-w5-kxz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Card1" destination="yez-99-ohk" id="XxN-oF-cQN"/>
+                        <outlet property="Card2" destination="Cih-LX-NTv" id="79f-qQ-jjB"/>
+                        <outlet property="Card3" destination="YOu-JV-XWj" id="Ea3-fC-eRY"/>
+                        <outlet property="Card4" destination="HSj-5y-Y7A" id="nwM-Ra-62W"/>
+                        <outlet property="Card5" destination="067-o9-RbA" id="TMC-2z-S3s"/>
+                        <outlet property="Card6" destination="XrQ-Dh-DbA" id="sd5-Xp-tv6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-188" y="89.505247376311857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="c2" width="71" height="96"/>
+        <image name="d5" width="71" height="96"/>
+        <image name="h2" width="71" height="96"/>
+        <image name="h3" width="71" height="96"/>
+        <image name="h9" width="71" height="96"/>
+        <image name="s10" width="71" height="96"/>
+    </resources>
 </document>
