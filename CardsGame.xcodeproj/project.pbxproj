@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					B15187A01E26C1FB00DD0906 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D3797JW3ME;
 						ProvisioningStyle = Automatic;
 					};
 					B15187B41E26C1FC00DD0906 = {
@@ -416,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D3797JW3ME;
 				INFOPLIST_FILE = CardsGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CALVIN.CardsGame;
@@ -428,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D3797JW3ME;
 				INFOPLIST_FILE = CardsGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CALVIN.CardsGame;

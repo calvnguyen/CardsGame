@@ -27,12 +27,12 @@ class ViewController: UIViewController {
         newDeck = Deck()
         newPlayer = Player(name: "Calvin")
         
-        Card1.isHidden = true
-        Card2.isHidden = true
-        Card3.isHidden = true
-        Card4.isHidden = true
-        Card5.isHidden = true
-        Card6.isHidden = true
+//        Card1.isHidden = true
+//        Card2.isHidden = true
+//        Card3.isHidden = true
+//        Card4.isHidden = true
+//        Card5.isHidden = true
+//        Card6.isHidden = true
         
     }
 
